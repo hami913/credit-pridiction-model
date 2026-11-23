@@ -1,0 +1,24 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+backend/.env
+frontend/.env
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+*.tmp
+*.bak
+mlruns/
+mlflow_tracking.db*
+mlartifacts/
+backend/models/candidates/
+backend/reports/generated/
+# Required source datasets and the deployed model are deliberately retained.

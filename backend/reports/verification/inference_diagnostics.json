@@ -1,0 +1,16 @@
+{
+  "verification_type": "inference_only",
+  "model_version": "1.0",
+  "model_sha256": "5f7068b16bf1393578f7fd6e1b37e9c6905a1fca993e20c9775424738006c261",
+  "dataset_sha256": "f7b7d22d1f8dd27dadb25d4b78d8a4ae7c441ab6cc12d1ea58c0efc54d4d1788",
+  "total_records": 30000,
+  "input_features": 38,
+  "threshold": 0.5,
+  "average_default_probability": 0.3942656901925801,
+  "minimum_probability": 0.08182214810608954,
+  "maximum_probability": 0.9769835141089288,
+  "predicted_default_count": 7866,
+  "predicted_nondefault_count": 22134,
+  "independent_test_performance": "not_evaluated",
+  "training_performed": false
+}

@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-11-23",
+  "sources": [
+    {
+      "archive": "AI-Credit-Default-Prediction-System-main.zip",
+      "archive_sha256": "a3713c1873c66ac79cc348543260bcc6beadce7a0850022ebbc5457fe8d7c047",
+      "archive_unchanged": true,
+      "original_files_checked": 46,
+      "changed_original_files": [],
+      "all_original_files_unchanged": true
+    },
+    {
+      "archive": "MLDemoProject-main.zip",
+      "archive_sha256": "de889c433b0da81c33c3bdee5d7320738134b860902288856e31fc08ff0f0e64",
+      "archive_unchanged": true,
+      "original_files_checked": 66,
+      "changed_original_files": [],
+      "all_original_files_unchanged": true
+    }
+  ],
+  "original_projects_modified": false,
+  "original_model_sha256": "5f7068b16bf1393578f7fd6e1b37e9c6905a1fca993e20c9775424738006c261",
+  "original_domain_modules_retained_byte_for_byte": 9
+}

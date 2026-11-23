@@ -1,0 +1,1010 @@
+[
+  {
+    "source_project": "Credit project",
+    "source_path": ".github/workflows/ci.yml",
+    "disposition": "adapted",
+    "integrated_paths": ".github/workflows/ci.yml",
+    "reason": "Retained CI intent; separate backend and live Streamlit suites use Python 3.12 and new requirements.",
+    "source_sha256": "5ac3153a7daac26b1f0360d70bc4d6f56dafd1656335186aa1f7eed614d14611",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": ".gitignore",
+    "disposition": "adapted",
+    "integrated_paths": ".gitignore",
+    "reason": "Python/Streamlit caches and local settings excluded; required data/model deliberately retained.",
+    "source_sha256": "d11e2c731d59f58ed5d482bc8c1eb2cd6acc37c02ed1c88d72d2cf98f3a379c4",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "BRANCH_PROTECTION_TEST.md",
+    "disposition": "excluded",
+    "integrated_paths": "",
+    "reason": "Branch-protection probe text has no application, model, deployment, or documentation function.",
+    "source_sha256": "de7e22333916a58c7b138d9e663cc954b62aca3fe711f791df35528037c2fa1c",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "Credit_default_pridiction_model_final_project.ipynb",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/notebooks/Credit_default_pridiction_model_final_project.ipynb",
+    "reason": "Historical research provenance; all 204 cells preserved; not executed; Colab paths documented.",
+    "source_sha256": "3b28234c6c2a224eaa9686019c315992ea324f8cbd242071645987f9ec411621",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "README.md",
+    "disposition": "adapted",
+    "integrated_paths": "README.md; docs/ARCHITECTURE.md",
+    "reason": "Rewritten for the complete integrated architecture, accurate installation, preservation and actual tests; original authorship retained.",
+    "source_sha256": "d2ddb87375d0ab83eb0d701d6c5eb99609c236a2f04cb3b7e8c585cb6756e289",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "api.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/app/main.py; backend/app/api/routes.py; backend/app/schemas/prediction.py; backend/app/services/prediction_service.py",
+    "reason": "Original credit API separated into professor-style layers; original /health and rounded /predict aliases preserved.",
+    "source_sha256": "f1e3a1ad35716ebfa9124d276804cd14d60c718019ac89aaaa2500361bcff582",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "app.py",
+    "disposition": "adapted",
+    "integrated_paths": "frontend/app.py; frontend/components/ui.py; frontend/components/common.py; frontend/components/batch.py; frontend/services/api.py; backend/app/services/prediction_service.py",
+    "reason": "Original Streamlit UI/charts/input/insights retained; serving inference and scenarios moved to backend; batch consolidated.",
+    "source_sha256": "ee278ee8fe1b0e5f704cc8bdd129c9c0821a98aedfe8e506919c2bb85f911208",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "app_generator_backup.py",
+    "disposition": "excluded",
+    "integrated_paths": "",
+    "reason": "Obsolete generator containing a duplicate older app; unique model-information/performance display retained in Model Information page.",
+    "source_sha256": "0095a4fbb3a17f05e2ffd7fe55c21a2d1c61c9ffa1fec9337ef389c86fa769a1",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "app_working_backup.py",
+    "disposition": "excluded",
+    "integrated_paths": "",
+    "reason": "Duplicate older application; useful nondefault probability/model card/indicator views integrated into current frontend.",
+    "source_sha256": "22c074e5fe89a1b50989acf6a5a3ee567e9ae3f1d8e6cf59029aaec098a12590",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "config.toml",
+    "disposition": "relocated",
+    "integrated_paths": ".streamlit/config.toml",
+    "reason": "Original Streamlit theme moved to its effective configuration directory; content preserved.",
+    "source_sha256": "ffa5c577897cb29bf686b2b148bb15b24d9435c49f8a0ee1487023286c407b0c",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "config/input_features.json",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/config/input_features.json",
+    "reason": "Canonical original order of all 23 raw features.",
+    "source_sha256": "70d1a32b95fcea9c62f864ad4ed785615e6add75aabcc32705f2e2e6e32f3f2d",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "models/credit_default_model_v1.joblib",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/models/credit_default_model_v1.joblib",
+    "reason": "Original trained Random Forest artifact; unchanged SHA-256, threshold and fitted pipeline.",
+    "source_sha256": "5f7068b16bf1393578f7fd6e1b37e9c6905a1fca993e20c9775424738006c261",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "pages/1_Batch_Assessment.py",
+    "disposition": "adapted",
+    "integrated_paths": "frontend/pages/1_Batch_Assessment.py; frontend/components/batch.py; frontend/services/api.py; backend/app/services/prediction_service.py",
+    "reason": "Standalone and embedded batch capabilities combined; original fields/IDs retained; inference centralized; strict/skip modes explicit.",
+    "source_sha256": "901f8eb1e631d8de33b9fc873909fcef63a7d915f2a3eb90512f2a2821a9f7a2",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "reports/credit_risk_regulatory_report.json",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/reports/credit_risk_regulatory_report.json",
+    "reason": "Original historical values retained with provenance; not treated as freshly verified performance or certification.",
+    "source_sha256": "eacf3135597c16d87dc9428970f1b017780bf9eb38d9180c49bd88e058e0dbac",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "requirements.txt",
+    "disposition": "adapted",
+    "integrated_paths": "backend/requirements.txt; backend/requirements-dev.txt; backend/requirements-research.txt; frontend/requirements.txt; requirements.txt; requirements-dev.txt",
+    "reason": "Preserved sklearn 1.6.1; runtime/dev/research/frontend dependencies separated and fresh install verified.",
+    "source_sha256": "884d5598255311c6410f6e3d3b2f699173a384993922d3a2130ed7e3bf32a807",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/analyze_business_cost.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate threshold validation report; hypothetical candidate-only cost assumptions are not deployed RF behavior. Core original reporting remains available.",
+    "source_sha256": "4091de78d68b7952e0556166d76082218a419c7e2937b7a905f0ca72233f3f07",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/analyze_oof_thresholds.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate real_20261017_145037_cfaac2 and workstation CSV; performs candidate retraining/threshold exploration that must not change deployed RF threshold.",
+    "source_sha256": "a0caf20815c904c5b0f2aa57334c712d10f27052ac37f19eb9ec12386511cf7f",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/audit_encoder_categories.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/scripts/audit_encoder_categories.py",
+    "reason": "Replaced Windows/cwd paths with backend-relative defaults and --csv CLI. Uses central service preparation and original fitted encoder; returns unknown-category and normalization counts.",
+    "source_sha256": "1de8c2968b6f786c3a0ca0c9976176fb495ee432446287969c9c3b1c5491df83",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/audit_probability_calibration.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate and hardcoded HGB Brier baseline; not an audit of the uploaded deployed RF. Portable monitoring/evaluation modules remain.",
+    "source_sha256": "0f4aa7187bb7efb64a49fbf7fe9c7012cac2788d1a7f2450c0dc3cb839306b14",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/audit_real_fairness.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate and hardcoded HGB confusion baseline; original portable fairness module now available through API with actual uploaded data.",
+    "source_sha256": "e1bd2d7b89dd2ab7178c5f71a83931dc7d1189dd95c47646c84443efdd0cf276",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/import_historical_mlflow.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/scripts/import_historical_mlflow.py",
+    "reason": "Preserves all original historical metric values and unverified provenance tags, duplicate-run protection. Optional lazy MLflow import and configurable tracking URI; explicit CLI only.",
+    "source_sha256": "95d2b80a3cbbcce4b0effc22de9e8698d3cb30bafb2df77ea2f250ace49d38ee",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/log_inference_mlflow.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/scripts/log_inference_mlflow.py",
+    "reason": "Preserves original inference tracking metrics/tags. Optional lazy MLflow import, --report and configurable --tracking-uri/MLFLOW_TRACKING_URI; validates model hash when recorded.",
+    "source_sha256": "bc1885c741b99fa9e13deb9d808bfaaf7056ca6281adb795ab01b2db56b4f348",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/register_hgb_candidate.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate, absent fairness report chain, and external MLflow registry writes; unrelated to serving original RF. No candidate invented or registered.",
+    "source_sha256": "bfda68426120b5801e90715428e8638712e577dbab82b52a756531490e8b5f3d",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/train_and_track_mlflow.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/scripts/train_and_track_mlflow.py",
+    "reason": "Retains original three-algorithm optional candidate research workflow. CLI dataset/output/URI replaces workstation paths; refuses nonempty outputs/deployed directory and checks deployed artifact hash. Not executed; never called by application/default tests.",
+    "source_sha256": "23e427df93e72d4f99009f64064fb74a4cd343a1c71af71bcf3e96426a0623b6",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/validate_candidate_threshold.py",
+    "disposition": "excluded from integrated project only",
+    "integrated_paths": "",
+    "reason": "Requires absent HGB candidate and hardcoded HGB AUC; experimental threshold 0.25 is not the preserved deployed RF threshold 0.50.",
+    "source_sha256": "a510c0e92eee3b7f54a49edbd43abcec8a475b9a90c50be942201942638b2981",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "scripts/verify_real_inference.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/scripts/verify_real_inference.py",
+    "reason": "Replaced Windows/cwd paths with backend-relative defaults + --csv/--output CLI. Uses central PredictionService and source/model SHA256 checks. Reports inference only; never trains.",
+    "source_sha256": "366c6cfa2d78b174e860e0bfec0477d5312f7658e6d103062e48eb7b88367d95",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/evaluate.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/evaluate.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "d30fb9eb6a3f7ff9cc40219912cf0ba044bec88907a3962a2a702a074d699481",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/explainability.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/explainability.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "b287d7adae7a3907aed912d30032dadb39e7df5418b276f958a6cfb042203d6a",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/fairness.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/fairness.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "5dbee22aac7ba673c9df4db7611a9eeb60e90864b276ef8923159a3ee8de09b0",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/feature_engineering.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/feature_engineering.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "8f01b81dd4a251b5b14941a2cfebaf578367462aa7afa2bdba10c944789444a0",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/monitoring.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/monitoring.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "aa453e37f6ab30d4679067a749e7b7852f028e0ba6410acf8fb1c8fe620961d0",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/preprocessing.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/preprocessing.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "41d28a626ec53f2df5955b5d8259a1dc99d33b90226823f80525266afbff1f5f",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/reporting.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/reporting.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "3c9044ca0f56f680f98524c4b9370a29586eaacbbf22076e34c814c0cee50c5b",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/risk_scoring.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/risk_scoring.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "6ed8999faf660ad5396e476d5cfa8317a8a3ebd45b5d114e0c69eb4a36bcbfee",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "src/train.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/src/train.py",
+    "reason": "Original credit-default domain logic retained; backend/config/models layout preserves relative paths.",
+    "source_sha256": "9cbf59248b86c35f11bf68af47809e0766fc5968bd3696af6e8084a01fdbd66e",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_api.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/tests/test_api.py; backend/tests/test_service.py",
+    "reason": "Original API checks expanded to saved model, strict input, batch, scenario, analytics and failure-state integration checks.",
+    "source_sha256": "b9df905f646135fee53cfbbabae862f059c187bde1131d4ed5b638a7423bb3e2",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_category_mapping.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_category_mapping.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "3631d573f3599129ee74445200b727274698c81128ecf6243994ae2026b1533d",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_evaluate.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_evaluate.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "6828f0c9a4c28f49b6096da114719ca79df87a328c970b847b741e6c2bc926d3",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_explainability.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/tests/test_explainability.py",
+    "reason": "Replaced synthetic fitted test model with shipped artifact and real UCI row; now tests actual SHAP without fitting any model.",
+    "source_sha256": "94db4e3d39bcbbf7bae77227f24183cdcf2ae82b074dcefb3cddab23b6036513",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_fairness.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_fairness.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "fe74f134c82916614e15f8dfd45b43734906bcba0b03b5f399f54473bb3f32a8",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_features.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_features.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "968b8555b999cfbb2a672982b6579c01b5ec33afa497dd78508c40af9c43b214",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_model.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_model.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "89ecf3ea59355f0bb7540fac4febb10d1399946eff4f67e3053af553095e8592",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_monitoring.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_monitoring.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "59cc7eae414956903ae5c125e2882537da455cf4c6db9423082a197e5b7d5527",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_reporting.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_reporting.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "32b0a248afd5de3f4f87bc7b5c10fbd55ae8da68eaf16ef6494c485f9dd18d18",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_risk_scoring.py",
+    "disposition": "retained byte-for-byte",
+    "integrated_paths": "backend/tests/test_risk_scoring.py",
+    "reason": "Original applicable unit test; model paths already resolve relative to test file.",
+    "source_sha256": "095815e382f8920e423f8adfba322a575813ef011cd5c88ac718ea47e464f94b",
+    "retained_exact": true
+  },
+  {
+    "source_project": "Credit project",
+    "source_path": "tests/test_train.py",
+    "disposition": "adapted",
+    "integrated_paths": "backend/tests/test_train.py",
+    "reason": "Marked entire module research and excluded by default; retained candidate research tests without running training.",
+    "source_sha256": "c7cf7d7b140656a759613688313264247078c0c9c27919d9a85ed0d435d9c56a",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": ".gitignore",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "9d835f7c603a255ac087a90a3eb9e4e41d79976e60f13cd37bd728940cae2314",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "README.md",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "c46825ec5201a5964a23dd4dd488f14fa9a57846fe4aee19f1665b00ec17d36e",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/.env.example",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "a96aaf2e6d151d7d233c1ec6ded08db1396ea80a9e4cf4f9deac8ae203e38dfc",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/__init__.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/api/__init__.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/api/routes.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "223da4d42a98ff25e0b2c8fbc50cff4c2cda2bd084117a8ed54c2bf6e5104a08",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/main.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "e333daabec5acfd2fd2fdd293e380a0bd342b01cff2da5f2731808584ae25eca",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/schemas/__init__.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/schemas/prediction.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "5e824f011bd7776458bf04f22ce637776ec19925b8fe7d19ee693a7dc0f083e6",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/services/__init__.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/app/services/prediction_service.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "App factory, router, schemas or service organization reimplemented for credit; no Iris logic copied.",
+    "source_sha256": "ff147194e10be493156977c30ce1661defd4b2aa66cc3231f7c85398ec6a2c9e",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/data/processed/test.csv",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris dataset or Iris split; unrelated to original credit data.",
+    "source_sha256": "bd77a641312ddc7112643b5c318accbdf15de0a2c59e87ccefccb80ac07ac51b",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/data/processed/train.csv",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris dataset or Iris split; unrelated to original credit data.",
+    "source_sha256": "560ab8124da00b842add5faa4d4d642fdc8a164fcf410e52e689439b393851a2",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/data/raw/iris.csv",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris dataset or Iris split; unrelated to original credit data.",
+    "source_sha256": "cdf459dcf51753a4f3f56e59a9c81d8c2aaf68889c0ce19ab347e46ff542e6f4",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/models/iris_decision_tree.joblib",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris Decision Tree or Iris metadata; original credit Random Forest retained instead.",
+    "source_sha256": "4815e1675f84e868004f15331157e4ff5d10cdabcc4f483c88389c5bf00824de",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/models/model_metadata.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris Decision Tree or Iris metadata; original credit Random Forest retained instead.",
+    "source_sha256": "7d49111e660ce219698607ecdf247264eac241bb51028f5ff8cccdddff0c1c96",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/notebooks/Decision Tree Notebook.ipynb",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris notebook and domain experiments excluded; credit notebook retained.",
+    "source_sha256": "d496ae9d397ae972d9b89ec9b03c905030ecfb6215367cf5d762c9d4692a6569",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/notebooks/model_prediction.ipynb",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris notebook and domain experiments excluded; credit notebook retained.",
+    "source_sha256": "adcdb3c24264d3d8bfe1ee82942d6ef4439e175f7ab4e946494cbf3226c3ca88",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/pytest.ini",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Saved-artifact/validation test organization used as reference; Iris tests and retraining fixture excluded.",
+    "source_sha256": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/eda_summary.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "08ba754dfddeb6f1a28da4e7ffb34d1055f0faac5fba2134098bfe32a95fb16f",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/boxplots.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "470b001114f2b2dcee0aec334d8223d6a8ff01a8dc4fbaf35a0ab1a8e926175c",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/class_distribution.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "27ab2f9c8b4dc6d721edf7a881510b908d91e87a0f9c13fd7f783237047274b5",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/confusion_matrix.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "cc3559f060f22c8311c8d90b4b2fcad8859a03e6d4b47960be42a6741addce89",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/correlation.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "457516ebb57a7c1b771836ea4879e5d38b5842df9b2ffb1ced348b611f6169d4",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/decision_tree.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "e0d4a19d8e0c9177171a46dc0450fc42877ba157a6f334d0a80e363c4481aad4",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/feature_histograms.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "7f25d9501a533efb9c8f268949910eaba715e1661ebd95013b74a92be958f0f5",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/feature_importance.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "58906aae71be95653a5349dd3e8ce858526be2044fa0f9d68c4800fc11098be0",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/figures/pairplot.png",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "15ba6a6e3f898062ca09a6756ec44807da9814951d59b962df7367389d92f025",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/metrics.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "fe84a49517bd998c807bc17d1ff907bad1a7d72968f1eb684ef87f2bdf66d796",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/reports/validation.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Iris-specific EDA, plot or evaluation output; never used as credit evidence.",
+    "source_sha256": "1242069c0f6fe50a15e807601e4d465091d582adda2cd3bae804ab1e30f9608e",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/requirements-dev.txt",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "02a16cf74172f893658d8249035513f0f249b5f056caf181183c9ad0a1ebb5ef",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/requirements-lock.txt",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "f00ff8a70ebceb09373ef8cc4668ee5cdad9bd2633022d676bec42b22e0d4fd5",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/requirements-training.txt",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "0e592bef8f1730eedf2121339e414f20dbcbcc92416ebd7b24b5f79913d67d19",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/requirements.txt",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Documentation/configuration/dependency organization reference only; credit-specific files written from actual requirements.",
+    "source_sha256": "81d9d0daef6868559179a197976b9f3a40f6059f14da7536811213cf9969f1af",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/__init__.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/config.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "c2518acd49d5efa61c169f601cb49eaebc349979db4ebefcf2e28112e300074f",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/data_ingestion.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "f66cbaf1f4884429e7a34b67c4b8856884c7286f6dca0eed1ff40d555ac0054b",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/data_preprocessing.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "bf92ec7510704fde3554ef7abd5da062c325e51183b7bc75004852220e1ca9b5",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/data_validation.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "e088ecc6785d58ab6e6b6e4fcf1075bc7b31eb60b749d52ef191469737073b38",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/eda.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "145207577c27e283c50be5ab195a099c99ebcccc3e3d7d4bbeb490f5ea47c906",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/feature_engineering.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "6dd37fe1bd58e7f7aa0b7f9593166cf33a22013470915aac442bea13fe3da211",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/model_evaluation.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "48abde8ed60198f4c1b6dbb27cb6a5d02036b2b26b73b4ae74d5681fdab0317b",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/model_training.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "4bf94ce4e9e8283d4e5778923484541bb871e3dc7f0873518765017e86a4cb8a",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/src/training_pipeline.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Offline-source/configuration organization reference; Iris feature/data/training logic excluded.",
+    "source_sha256": "07ad88ebe5c00531011ce14cf20a2c42afc3dfff637d39b0bce46f4c28087d18",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/tests/conftest.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Saved-artifact/validation test organization used as reference; Iris tests and retraining fixture excluded.",
+    "source_sha256": "89264cfab91dde0b537eecb5055885a1d8c644149fffd77d2336b309dd3588a6",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/tests/test_api.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Saved-artifact/validation test organization used as reference; Iris tests and retraining fixture excluded.",
+    "source_sha256": "7deca071980aa107f9c12915c705be34e9fe28033571e8107ed69aee18505b36",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/tests/test_prediction.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Saved-artifact/validation test organization used as reference; Iris tests and retraining fixture excluded.",
+    "source_sha256": "3fb4b74821fc903781f71abf5a9f042d05a4bc0aa0c0f6b520ecb4875e61ea3c",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "backend/tests/test_saved_model.py",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Saved-artifact/validation test organization used as reference; Iris tests and retraining fixture excluded.",
+    "source_sha256": "02ab32f66677f914896f38efb937ddc8300b06bd5b5fe67fb659e88aa0a711b2",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/.env.example",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "8efca76609c1c17e70cd8d62e811085e611df91baf15f63f948326c0cca643ae",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/index.html",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "d36caf490df90d06c2558391007fbb662d685dbe8f34a68cf68a460e70ee3118",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/package-lock.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "0d13bb67999ea4cf364f97c3f00fd3cc6ccc4a4150daba281899e6b9090a52c1",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/package.json",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "8390ce35fe9eeedf098aaea418e70495884f7e0a7c6f7f72992934d958f6f3e9",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/App.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "7952091a6fb9abff880d19920ba2c02e14c9b8a0a3acba14b53cc1f6ab00e379",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/components/Navbar.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "69ec92f6637f9a4aca3c11666f10704b8b3d44d145e8c220dd99f89fd3018251",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/components/PredictionForm.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "77defc8b3a9e5a9cc2243721dbf4eeb5d2b6628da164c00304109886772f9a38",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/components/PredictionForm.test.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "525f9107c3f7a8c2d657ac97ac4f48f5647544c6c1f09b0d84862f7bd538575f",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/components/PredictionResult.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "ad942a5343f20a5e1f49323bafb50b639618b48aecb87a8d6eff506bee4fbd1c",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/components/SpeciesCard.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "8c50e8a176d7ae5fcf6202a96c8b279f510fc3f885442197eb778e3d28b0e0a0",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/main.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "d687c2206f131631797bc27de8416020a4c67579c9c175ac435957cce72f2277",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/pages/Dashboard.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "0c390fa1dd460e251e3e1bc9318e3bbf935ec9f7fda2e05a73320b17c428ac1a",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/pages/Dashboard.test.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "de323ee83f4e2d852f121e7889d4dd83efd3b7a302b4b1172194f9b85d41c81e",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/pages/ModelPerformance.jsx",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "322ae1c6e8454e4550051ed8f71f86057cc7e8922f4d8d6136f1796d1369ecaa",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/services/api.js",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "Python API-client separation pattern only.",
+    "source_sha256": "52051bf33b4bde3acbaaf2816f1427659b53ae1369a433fdf1fd609272c791a4",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/styles.css",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "94d07c3a205a2c5e6c193637f337e32232e1e49b79c677bccd7b619c41908f80",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/src/test-setup.js",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "ace51ddf220516380965ca2e146ee99b1024f32578c033689c32f834de4baab0",
+    "retained_exact": false
+  },
+  {
+    "source_project": "Professor reference",
+    "source_path": "frontend/vite.config.js",
+    "disposition": "reference only; excluded",
+    "integrated_paths": "",
+    "reason": "React/JSX/Vite/Node frontend excluded; Streamlit retained.",
+    "source_sha256": "f1d61c74b3b169641575fd32d430d5105600444011b32b7bb8f9bed21e67ee4d",
+    "retained_exact": false
+  }
+]

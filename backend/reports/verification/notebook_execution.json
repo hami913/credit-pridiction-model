@@ -1,0 +1,109 @@
+{
+  "method": "Sequential Python exec/compile of each code cell in one namespace; stdout/stderr captured and matplotlib figures embedded as PNG. Not nbclient or a live Jupyter kernel run.",
+  "python": "3.12.14",
+  "code_cells": 12,
+  "passed": 12,
+  "elapsed_seconds": 3.839,
+  "full_execution_working_directory": "project root",
+  "additional_setup_path_checks": [
+    {
+      "working_directory": "backend",
+      "setup": "passed"
+    },
+    {
+      "working_directory": "backend/notebooks",
+      "setup": "passed"
+    }
+  ],
+  "results": [
+    {
+      "cell_index": 1,
+      "execution_count": 1,
+      "status": "passed",
+      "elapsed_seconds": 2.026,
+      "plots": 0
+    },
+    {
+      "cell_index": 3,
+      "execution_count": 2,
+      "status": "passed",
+      "elapsed_seconds": 0.001,
+      "plots": 0
+    },
+    {
+      "cell_index": 5,
+      "execution_count": 3,
+      "status": "passed",
+      "elapsed_seconds": 0.01,
+      "plots": 0
+    },
+    {
+      "cell_index": 6,
+      "execution_count": 4,
+      "status": "passed",
+      "elapsed_seconds": 0.202,
+      "plots": 1
+    },
+    {
+      "cell_index": 8,
+      "execution_count": 5,
+      "status": "passed",
+      "elapsed_seconds": 0.012,
+      "plots": 0
+    },
+    {
+      "cell_index": 10,
+      "execution_count": 6,
+      "status": "passed",
+      "elapsed_seconds": 0.046,
+      "plots": 0
+    },
+    {
+      "cell_index": 12,
+      "execution_count": 7,
+      "status": "passed",
+      "elapsed_seconds": 0.048,
+      "plots": 0
+    },
+    {
+      "cell_index": 14,
+      "execution_count": 8,
+      "status": "passed",
+      "elapsed_seconds": 0.104,
+      "plots": 1
+    },
+    {
+      "cell_index": 16,
+      "execution_count": 9,
+      "status": "passed",
+      "elapsed_seconds": 0.957,
+      "plots": 1
+    },
+    {
+      "cell_index": 18,
+      "execution_count": 10,
+      "status": "passed",
+      "elapsed_seconds": 0.11,
+      "plots": 1
+    },
+    {
+      "cell_index": 20,
+      "execution_count": 11,
+      "status": "passed",
+      "elapsed_seconds": 0.001,
+      "plots": 0
+    },
+    {
+      "cell_index": 22,
+      "execution_count": 12,
+      "status": "passed",
+      "elapsed_seconds": 0.073,
+      "plots": 0
+    }
+  ],
+  "model_sha256_unchanged": "5f7068b16bf1393578f7fd6e1b37e9c6905a1fca993e20c9775424738006c261",
+  "historical_notebook_sha256_unchanged": "3b28234c6c2a224eaa9686019c315992ea324f8cbd242071645987f9ec411621",
+  "model_training_performed": false,
+  "report_files_written_by_notebook": false,
+  "completed_at_utc": "2026-11-23T15:53:52.443989+00:00"
+}

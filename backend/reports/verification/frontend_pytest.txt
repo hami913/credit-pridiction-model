@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.7.0 -- /workspace/scratch/89edb65ea99c/work/clean_venv/bin/python
+rootdir: /workspace/scratch/89edb65ea99c/Integrated_Credit_Default_System/frontend
+configfile: pytest.ini
+plugins: anyio-4.16.0
+collecting ... collected 27 items
+
+frontend/tests/test_api_client.py::test_predict_passes_exact_raw_record_to_backend PASSED [  3%]
+frontend/tests/test_api_client.py::test_read_endpoints_use_configured_base[health-/api/health] PASSED [  7%]
+frontend/tests/test_api_client.py::test_read_endpoints_use_configured_base[model_info-/api/model/info] PASSED [ 11%]
+frontend/tests/test_api_client.py::test_read_endpoints_use_configured_base[model_metrics-/api/model/metrics] PASSED [ 14%]
+frontend/tests/test_api_client.py::test_read_endpoints_use_configured_base[feature_importance-/api/model/feature-importance] PASSED [ 18%]
+frontend/tests/test_api_client.py::test_scenario_and_explanation_request_contract PASSED [ 22%]
+frontend/tests/test_api_client.py::test_batch_upload_retains_bytes_and_policy PASSED [ 25%]
+frontend/tests/test_api_client.py::test_analytics_upload_contract PASSED [ 29%]
+frontend/tests/test_api_client.py::test_template_and_sample_return_download_bytes PASSED [ 33%]
+frontend/tests/test_api_client.py::test_validation_error_keeps_structured_row_details PASSED [ 37%]
+frontend/tests/test_api_client.py::test_missing_backend_has_actionable_error PASSED [ 40%]
+frontend/tests/test_api_client.py::test_timeout_has_actionable_error PASSED [ 44%]
+frontend/tests/test_api_client.py::test_invalid_json_is_not_reported_as_a_prediction PASSED [ 48%]
+frontend/tests/test_api_client.py::test_invalid_api_configuration[file:///tmp/model] PASSED [ 51%]
+frontend/tests/test_api_client.py::test_invalid_api_configuration[backend.test] PASSED [ 55%]
+frontend/tests/test_api_client.py::test_invalid_api_configuration[ftp://backend.test] PASSED [ 59%]
+frontend/tests/test_live_integration.py::test_live_api_client_preserves_predictions_and_supports_analytics PASSED [ 62%]
+frontend/tests/test_live_integration.py::test_live_streamlit_single_scenarios_shap_and_model_page PASSED [ 66%]
+frontend/tests/test_live_integration.py::test_live_streamlit_batch_upload_and_invalid_row_handling PASSED [ 70%]
+frontend/tests/test_live_integration.py::test_live_streamlit_fairness_reporting_and_monitoring PASSED [ 74%]
+frontend/tests/test_streamlit.py::test_initial_single_form_and_empty_history_guard PASSED [ 77%]
+frontend/tests/test_streamlit.py::test_single_scenarios_explanation_and_result_survive_rerun PASSED [ 81%]
+frontend/tests/test_streamlit.py::test_all_pages_render_through_real_streamlit_navigation[pages/1_Batch_Assessment.py-None] PASSED [ 85%]
+frontend/tests/test_streamlit.py::test_all_pages_render_through_real_streamlit_navigation[pages/2_Model_Information.py-Model information & performance] PASSED [ 88%]
+frontend/tests/test_streamlit.py::test_all_pages_render_through_real_streamlit_navigation[pages/3_Analytics.py-Monitoring, fairness & reporting] PASSED [ 92%]
+frontend/tests/test_streamlit.py::test_backend_unavailable_is_visible_without_traceback PASSED [ 96%]
+frontend/tests/test_streamlit.py::test_scenario_comparison_uses_full_precision_not_display_rounding PASSED [100%]
+
+- generated xml file: /workspace/scratch/89edb65ea99c/Integrated_Credit_Default_System/backend/reports/verification/frontend_pytest.xml -
+============================== 27 passed in 7.34s ==============================

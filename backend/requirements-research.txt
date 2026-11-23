@@ -1,0 +1,8 @@
+# Optional offline research only. Never required by FastAPI or Streamlit.
+-r requirements-dev.txt
+xlrd==2.0.1
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+jupyterlab>=4,<5
+mlflow>=3,<4
+xgboost>=3,<4

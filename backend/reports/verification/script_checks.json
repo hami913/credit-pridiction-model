@@ -1,0 +1,37 @@
+[
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.audit_encoder_categories --help",
+    "returncode": 0,
+    "output": "usage: audit_encoder_categories.py [-h] [--csv CSV]\n\nInspect original fitted encoder coverage without altering data or model.\n\noptions:\n  -h, --help  show this help message and exit\n  --csv CSV\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.import_historical_mlflow --help",
+    "returncode": 0,
+    "output": "usage: import_historical_mlflow.py [-h] [--tracking-uri TRACKING_URI]\n\nOpt-in import of the user's historical scores, with original provenance tags.\n\noptions:\n  -h, --help            show this help message and exit\n  --tracking-uri TRACKING_URI\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.log_inference_mlflow --help",
+    "returncode": 0,
+    "output": "usage: log_inference_mlflow.py [-h] [--report REPORT]\n                               [--tracking-uri TRACKING_URI]\n\nOpt-in MLflow logging of an existing read-only RF inference report.\n\noptions:\n  -h, --help            show this help message and exit\n  --report REPORT       Defaults to latest real_data_inference_*.json\n  --tracking-uri TRACKING_URI\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.train_and_track_mlflow --help",
+    "returncode": 0,
+    "output": "usage: train_and_track_mlflow.py [-h] --csv CSV [--output-dir OUTPUT_DIR]\n                                 [--tracking-uri TRACKING_URI] [--folds FOLDS]\n                                 [--iterations ITERATIONS]\n\nOptional future research: train and log a separate candidate, never deploy it.\nThis script is not run by application startup, installation, or default tests.\nThe shipped Random Forest is never fitted, replaced, or registered by it.\n\noptions:\n  -h, --help            show this help message and exit\n  --csv CSV             Labeled local dataset for an explicitly requested\n                        research experiment\n  --output-dir OUTPUT_DIR\n                        A new candidate directory\n  --tracking-uri TRACKING_URI\n  --folds FOLDS\n  --iterations ITERATIONS\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.verify_real_inference --help",
+    "returncode": 0,
+    "output": "usage: verify_real_inference.py [-h] [--csv CSV] [--output OUTPUT]\n\nRun the original inference verification through the central service. From\nbackend/: python -m scripts.verify_real_inference [--csv PATH] This command\ndoes not fit a model or calculate independent test performance.\n\noptions:\n  -h, --help       show this help message and exit\n  --csv CSV\n  --output OUTPUT  New report path; existing files are protected\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.verify_real_inference --output /workspace/scratch/89edb65ea99c/work/portable_inference_verification.json",
+    "returncode": 0,
+    "output": "{\n  \"verification_type\": \"inference_only\",\n  \"model_version\": \"1.0\",\n  \"model_sha256\": \"5f7068b16bf1393578f7fd6e1b37e9c6905a1fca993e20c9775424738006c261\",\n  \"dataset_sha256\": \"f7b7d22d1f8dd27dadb25d4b78d8a4ae7c441ab6cc12d1ea58c0efc54d4d1788\",\n  \"total_records\": 30000,\n  \"input_features\": 38,\n  \"threshold\": 0.5,\n  \"average_default_probability\": 0.3942656901925801,\n  \"minimum_probability\": 0.08182214810608954,\n  \"maximum_probability\": 0.9769835141089288,\n  \"predicted_default_count\": 7866,\n  \"predicted_nondefault_count\": 22134,\n  \"independent_test_performance\": \"not_evaluated\",\n  \"training_performed\": false\n}\nReport: /workspace/scratch/89edb65ea99c/work/portable_inference_verification.json\n"
+  },
+  {
+    "command": "/workspace/scratch/89edb65ea99c/work/venv/bin/python -m scripts.audit_encoder_categories",
+    "returncode": 0,
+    "output": "{\n  \"records\": 30000,\n  \"training_performed\": false,\n  \"columns\": [\n    {\n      \"transformer\": \"cat\",\n      \"column\": \"SEX\",\n      \"known_categories\": [\n        1,\n        2\n      ],\n      \"unknown_records\": 0,\n      \"normalized_records\": 0,\n      \"unknown_values\": {}\n    },\n    {\n      \"transformer\": \"cat\",\n      \"column\": \"EDUCATION\",\n      \"known_categories\": [\n        1,\n        2,\n        3,\n        4\n      ],\n      \"unknown_records\": 0,\n      \"normalized_records\": 345,\n      \"unknown_values\": {}\n    },\n    {\n      \"transformer\": \"cat\",\n      \"column\": \"MARRIAGE\",\n      \"known_categories\": [\n        1,\n        2,\n        3\n      ],\n      \"unknown_records\": 0,\n      \"normalized_records\": 54,\n      \"unknown_values\": {}\n    }\n  ]\n}\n"
+  }
+]

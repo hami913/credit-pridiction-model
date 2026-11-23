@@ -1,0 +1,29 @@
+{
+  "dataset": "Default of Credit Card Clients",
+  "creator": "I-Cheng Yeh",
+  "citation": "Yeh, I. (2009). Default of Credit Card Clients [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55S3H",
+  "source_page": "https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients",
+  "download_url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "retrieved_date": "2026-11-23",
+  "rows": 30000,
+  "columns": 25,
+  "raw_feature_count": 23,
+  "target": "default.payment.next.month",
+  "class_counts": {
+    "0": 23364,
+    "1": 6636
+  },
+  "original_upload_contained_dataset": false,
+  "limitation": "The uploaded ZIP omitted its local CSV. Official UCI data was restored; byte identity with the absent user CSV cannot be established.",
+  "source_xls_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "canonical_csv_sha256": "f7b7d22d1f8dd27dadb25d4b78d8a4ae7c441ab6cc12d1ea58c0efc54d4d1788",
+  "transformations": [
+    "Preserved original XLS bytes, with a portable filename.",
+    "Read the Data sheet with header row 2.",
+    "Renamed target from default payment next month to default.payment.next.month.",
+    "Wrote CSV without index. No data rows, values, or categorical codes changed."
+  ],
+  "no_training_performed": true
+}

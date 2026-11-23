@@ -1,0 +1,3 @@
+# Convenient combined environment for local execution.
+-r backend/requirements.txt
+-r frontend/requirements.txt

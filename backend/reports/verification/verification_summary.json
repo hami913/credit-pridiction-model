@@ -1,0 +1,70 @@
+{
+  "generated_at_utc": "2026-11-23T15:56:43.612436+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "fastapi": "0.141.1",
+    "pydantic": "2.13.4",
+    "uvicorn": "0.52.1",
+    "python-multipart": "0.0.32",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "joblib": "1.6.0",
+    "shap": "0.48.0",
+    "streamlit": "1.51.0",
+    "plotly": "6.3.1",
+    "httpx": "0.28.1",
+    "pytest": "8.4.2",
+    "starlette": "1.10.0"
+  },
+  "live_frontend_tests_enabled": true,
+  "deployed_model_training_performed": false,
+  "suites": [
+    {
+      "suite": "backend",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-c",
+        "backend/pytest.ini",
+        "backend/tests",
+        "-v",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=/workspace/scratch/89edb65ea99c/Integrated_Credit_Default_System/backend/reports/verification/backend_pytest.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 13.612,
+      "tests": 208,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 208
+    },
+    {
+      "suite": "frontend",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-c",
+        "frontend/pytest.ini",
+        "frontend/tests",
+        "-v",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=/workspace/scratch/89edb65ea99c/Integrated_Credit_Default_System/backend/reports/verification/frontend_pytest.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 8.276,
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 27
+    }
+  ]
+}
